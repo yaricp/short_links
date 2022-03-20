@@ -1,5 +1,8 @@
 # short_links
 
+REST API for generate short links based on FastAPI.
+Allows registered user to create and manage own short links.
+
 ## Backend Requirements
 
 * [Docker](https://www.docker.com/).
