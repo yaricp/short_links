@@ -9,13 +9,14 @@
 
 ## Environment variables
 
-Put file .env to project and out variables into the file.
+Put file .env to project and put variables into the file.
 For example:
 
+```bash
 DOMAIN=localhost
 TRAEFIK_PUBLIC_NETWORK=traefik-public
 DOCKER_IMAGE_BACKEND=backend
-BACKEND_CORS_ORIGINS=["http://localhost", "http://localhost:4200", "http://localhost:3000", "http://localhost:8080", "https://localhost", "https://localhost:4200", "https://localhost:3000", "https://localhost:8080", "http://dev.short_links.com", "https://stag.short_links.com", "https://short_links.com", "http://local.dockertoolbox.tiangolo.com", "http://localhost.tiangolo.com"]
+BACKEND_CORS_ORIGINS=["http://localhost", "http://localhost:8080"]
 PROJECT_NAME=short_links
 SECRET_KEY=a1b2c3
 FIRST_SUPERUSER=admin@admin.ru
@@ -37,7 +38,7 @@ POSTGRES_DB=app
 PGADMIN_LISTEN_PORT=5050
 PGADMIN_DEFAULT_EMAIL=admin@admin.ru
 PGADMIN_DEFAULT_PASSWORD=admin
-
+```
 
 ## Start system
 

@@ -22,7 +22,7 @@ def make_short_link(link: schemas.LinkCreate) -> schemas.LinkCreateDB:
         text = link.text,
         short_text = short_text,
         expired = datetime.utcnow() + timedelta(
-            minutes=settings.SHORT_LINK_EXPIRE_MINUTES
+            days=settings.SHORT_LINK_EXPIRE_DAYS
         )
     )
     return link_out

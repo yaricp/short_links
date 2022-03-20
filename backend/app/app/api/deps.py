@@ -17,7 +17,7 @@ reusable_oauth2 = OAuth2PasswordBearer(
 
 
 def get_db() -> Generator:
-    """ Opens db seesion"""
+    """ Opens db session"""
     try:
         db = SessionLocal()
         yield db
@@ -57,7 +57,7 @@ def get_current_active_user(
 def get_current_active_superuser(
     current_user: models.User = Depends(get_current_user),
 ) -> models.User:
-    """Checks is current user ia superadmin"""
+    """Checks is current user is superadmin"""
     if not crud.user.is_superuser(current_user):
         raise HTTPException(
             status_code=400, detail="The user doesn't have enough privileges"
